@@ -114,7 +114,11 @@ const navigation = [
     <leasingItems id="items" :class="marginBottom" />
     <advantages id="advantages" :class="marginBottom" />
     <div class="h-20 w-full bg-dev-100" :class="marginBottom"></div>
-    <leasingAgent :class="marginBottom" />
+    
+    <!-- <leasingAgent :class="marginBottom" /> -->
+
+    <!-- СДЕЛАТЬ КАК НА САЙТЕ ПРО ВИДЫ ПОТОЛКОВ -->
+
     <popQuestions id="questions" :class="marginBottom" />
     <parallaxComponent id="application" />
     <rates id="rate" />
