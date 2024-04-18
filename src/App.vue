@@ -36,9 +36,9 @@ const navigation = [
   <div id="top" :class="{'dark': darkMode}" class="flex flex-col relative">
     <div class="w-full">
       <div class="flex flex-row justify-between items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-20">
-        <h1 class="text-lg xs:text-xl" id="font">Leasing Paradise</h1>
+        <h1 class="text-lg xs:text-xl" id="font">JBY Group</h1>
         <div class="flex flex-row text-nowrap items-center gap-2">
-          <a href="tel:+79268495999" class="text-sm xs:text-lg">+7 (926) 849-59-99</a>
+          <a href="tel:+74993900839" class="text-sm xs:text-lg">+7 (499) 390-08-39</a>
           <defaultButton class="text-sm">Звонок</defaultButton>
         </div>
       </div>
@@ -52,24 +52,24 @@ const navigation = [
     <section class="w-full bg-dev-500">
       <div class="hidden h-44 s:flex max-w-7xl mx-auto flex-row justify-between items-center px-6">
         <div class="flex flex-col justify-evenly w-1/5 text-white h-full">
-          <p class="text-3xl font-bold">от 2 часов</p>
+          <p class="text-3xl font-bold">10 лет</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Решение по сделке</p>
+          <p class="text-2xl font-normal">Опыта работы</p>
         </div>
         <div class="flex flex-col text-center justify-evenly w-1/5 text-white h-full">
-          <p class="text-3xl font-bold">от 0%</p>
+          <p class="text-3xl font-bold">20 лет гарантии</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Аванс</p>
+          <p class="text-2xl font-normal">На натяжной потолок</p>
         </div>
         <div class="flex flex-col text-center justify-evenly w-1/5 text-white h-full">
-          <p class="text-3xl font-bold">по 2 документам</p>
+          <p class="text-3xl font-bold">10 бригад</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Оформление</p>
+          <p class="text-2xl font-normal">Профессионалов</p>
         </div>
         <div class="flex flex-col text-end justify-evenly w-1/5 text-white h-full">
-          <p class="text-3xl font-bold">от 6 до 84</p>
+          <p class="text-3xl font-bold">24 часа</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Месяцев лизинга</p>
+          <p class="text-2xl font-normal">От замера до монтажа</p>
         </div>
       </div>
       <div class="s:hidden min-h-96 max-w-lg mx-auto flex flex-col justify-between p-6 gap-8">

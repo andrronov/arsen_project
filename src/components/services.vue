@@ -2,7 +2,7 @@
    <section class="bg-white">
      <div class="mx-auto max-w-7xl px-6 lg:px-8">
        <div class="mx-auto max-w-2xl lg:text-center">
-         <h2 class="text-base font-semibold leading-7 text-dev-300">Старт быстрее</h2>
+         <h2 class="text-base font-semibold leading-7 text-dev-300">Процесс установки натяжных потолков приятнее</h2>
          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">С нашими услугами:</p>
          <!-- <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p> -->
        </div>
@@ -33,37 +33,37 @@
    {
      name: 'Индивидуальный подбор ',
      description:
-       'лучшего предложения от ведущих лизинговых компаний в режиме одного окна',
+       'лучшего предложения на основе ваших потребностей',
      icon: MagnifyingGlassIcon,
    },
    {
-     name: 'Поиск и подбор',
+     name: 'Многолетний опыт работы',
      description:
-       'желаемого предмета лизинга',
+       '10 лет успешных работ и довольных клиентов',
      icon: ArrowRightCircleIcon,
    },
    {
-     name: 'Сбор документов',
+     name: 'Замеры и расчёт',
      description:
-       'необходимых для подачи заявки на лизинг',
+       'необходимых для качественной установки',
      icon: DocumentArrowDownIcon,
    },
    {
      name: 'Консультация на любом этапе',
      description:
-       'сделки, сопровождение до подписания договоров лизинга',
+       'монтажа и установки потолков',
      icon: UserPlusIcon,
    },
    {
-     name: 'Работаем',
+     name: 'Работают',
      description:
-       'с проверенными поставщиками',
+       'исключительные профессионалы своего дела',
      icon: CurrencyDollarIcon
    },
    {
-     name: 'Сотрудничаем',
+     name: 'Гарантия',
      description:
-       'с топ-10 лизинговыми компаниями',
+       '20 лет на натяжные потолки',
       icon: BanknotesIcon,
    },
  ]
