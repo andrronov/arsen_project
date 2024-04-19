@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col items-center">
-    <h3 class="text-dev-100 font-bold text-4xl mb-16 px-4">
+    <h3 class="text-dev-100 font-bold text-center text-3xl sm:text-4xl mb-16 px-4">
       Что вы получаете выбирая нас?
     </h3>
     <div class="flex flex-row items-start max-w-3xl px-8 s:px-4 relative mb-6" v-for="(item, index) in items" :key="index">

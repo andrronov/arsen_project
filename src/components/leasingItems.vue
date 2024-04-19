@@ -1,6 +1,6 @@
 <template>
    <section class="w-full bg-dev-100 flex flex-col items-center text-white">
-      <h3 class="font-bold text-4xl mb-16 mt-6">Какие натяжные потолки мы устанавливаем</h3>
+      <h3 class="font-bold text-4xl mb-16 mt-6 text-center">Какие натяжные потолки мы устанавливаем</h3>
       <div class="max-w-7xl grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-4 mb-24">
          <div v-for="(item, index) in leasItems" :key="index" class="flex w-auto flex-col items-center">
             <img :src='item.img' alt="car" class="w-72 h-44 object-cover border-4 shadow-sm shadow-white border-white mb-4">

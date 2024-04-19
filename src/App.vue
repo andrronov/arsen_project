@@ -14,6 +14,7 @@ import parallaxComponent from './components/parallaxComponent.vue'
 import footerComponent from './components/footerComponent.vue'
 import splashScreen from './components/splashScreen.vue'
 import phoneRing from './components/phoneRing.vue'
+import roofTypes from './components/roofTypes.vue';
 
 const darkMode = ref(false)
 const marginBottom = ref('mb-24')
@@ -21,7 +22,7 @@ const marginBottom = ref('mb-24')
 const navigation = [
    { name: 'Услуги', href: '#services', current: true },
    { name: 'О нас', href: '#about', current: false },
-   { name: 'Предметы лизинга', href: '#items', current: false },
+   { name: 'Какие потолки устанавливаем', href: '#items', current: false },
    { name: 'Преимущества', href: '#advantages', current: false },
    { name: 'Частые вопросы', href: '#questions', current: false },
    { name: 'Заявка', href: '#application', current: false },
@@ -118,7 +119,7 @@ const navigation = [
     <!-- <leasingAgent :class="marginBottom" /> -->
 
     <!-- СДЕЛАТЬ КАК НА САЙТЕ ПРО ВИДЫ ПОТОЛКОВ -->
-
+    <roofTypes :class="marginBottom" />
     <popQuestions id="questions" :class="marginBottom" />
     <parallaxComponent id="application" />
     <rates id="rate" />

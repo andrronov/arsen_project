@@ -1,5 +1,5 @@
 <template>
-   <a href="tel:+79268495999" class="Phone is-animating"></a>
+   <a href="tel:+74993900839" class="Phone is-animating"></a>
 </template>
 
 <style scoped lang="scss">

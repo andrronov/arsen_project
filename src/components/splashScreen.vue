@@ -10,7 +10,7 @@
       leave-from="opacity-100"
       leave-to="opacity-0"
   >
-  <h1 class="text-lg xs:text-xl text-white" id="font">Leasing Paradise</h1>
+  <h1 class="text-lg xs:text-xl text-white" id="font">JBY Group</h1>
   </TransitionRoot>
 </template>
 
