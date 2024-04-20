@@ -20,6 +20,7 @@
     "nodemailer": "^6.9.9",
     "nodemon": "^3.0.3",
     "vue": "^3.4.15",
+    "vue-router": "^4.3.2",
     "vue3-carousel": "^0.3.1",
     "vue3-smooth-scroll": "^0.8.1"
   },

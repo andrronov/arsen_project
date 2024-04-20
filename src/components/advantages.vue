@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col items-center">
-    <h3 class="text-dev-100 font-bold text-center text-3xl sm:text-4xl mb-16 px-4">
+    <h3 class="text-dev-300 font-bold text-center text-3xl sm:text-4xl mb-16 px-4">
       Что вы получаете выбирая нас?
     </h3>
     <div class="flex flex-row items-start max-w-3xl px-8 s:px-4 relative mb-6" v-for="(item, index) in items" :key="index">
@@ -8,7 +8,7 @@
       <div>
         <h5 class="font-bold text-xl mb-3">{{ item.title }}</h5>
         <p class="text-lg">{{ item.text }}</p>
-        <p v-if="item.adding" class="text-dev-300 font-semibold mt-1 text-lg">{{ item.adding }}</p>
+        <p v-if="item.adding" class="text-dev-500 font-semibold mt-1 text-lg">{{ item.adding }}</p>
       </div>
     </div>
     <a href="#application" v-smooth-scroll="{ duration: 1000, offset: -50 }" class="p-3 mt-8 text-center w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</a>

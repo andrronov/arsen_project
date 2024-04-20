@@ -1,15 +1,15 @@
 <template>
    <div class="w-full px-4 pt-16">
-    <h3 class="text-center font-bold text-dev-300 text-2xl mb-6">Часто задаваемые вопросы</h3>
+    <h3 class="text-center font-bold text-dev-300 text-2xl sm:text-3xl mb-6">Часто задаваемые вопросы</h3>
      <div class="max-w-7xl mx-auto rounded-2xl bg-white p-2">
        <Disclosure v-slot="{ open }">
          <DisclosureButton
-           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-blue-100 hover:bg-blue-600 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75"
+           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-orange-100 hover:bg-orange-600 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/75"
          >
            <span>Какие виды натяжных потолков вы предлагаете?</span>
            <ChevronUpIcon
              :class="open ? 'rotate-180 transform' : ''"
-             class="h-5 w-5 text-blue-200"
+             class="h-5 w-5 text-orange-200"
            />
          </DisclosureButton>
          <DisclosurePanel class="px-4 pb-2 pt-4 text-base text-gray-800">
@@ -26,12 +26,12 @@
        </Disclosure>
        <Disclosure v-slot="{ open }">
          <DisclosureButton
-           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-blue-100 hover:bg-blue-600 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75"
+           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-orange-100 hover:bg-orange-600 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/75"
          >
            <span>Какие преимущества натяжных потолков?</span>
            <ChevronUpIcon
              :class="open ? 'rotate-180 transform' : ''"
-             class="h-5 w-5 text-blue-200"
+             class="h-5 w-5 text-orange-200"
            />
          </DisclosureButton>
          <DisclosurePanel class="px-4 pb-2 pt-4 text-base text-gray-800">
@@ -48,12 +48,12 @@
        </Disclosure>
        <Disclosure v-slot="{ open }">
          <DisclosureButton
-           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-blue-100 hover:bg-blue-600 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75"
+           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-orange-100 hover:bg-orange-600 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/75"
          >
            <span>Сколько времени занимает установка натяжного потолка?</span>
            <ChevronUpIcon
              :class="open ? 'rotate-180 transform' : ''"
-             class="h-5 w-5 text-blue-200"
+             class="h-5 w-5 text-orange-200"
            />
          </DisclosureButton>
          <DisclosurePanel class="px-4 pb-2 pt-4 text-base text-gray-800">
@@ -65,12 +65,12 @@
        </Disclosure>
        <Disclosure v-slot="{ open }">
          <DisclosureButton
-           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-blue-100 hover:bg-blue-600 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75"
+           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-orange-100 hover:bg-orange-600 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/75"
          >
            <span>Можно ли установить натяжной потолок в ванной?</span>
            <ChevronUpIcon
              :class="open ? 'rotate-180 transform' : ''"
-             class="h-5 w-5 text-blue-200"
+             class="h-5 w-5 text-orange-200"
            />
          </DisclosureButton>
          <DisclosurePanel class="px-4 pb-2 pt-4 text-base text-gray-800">
@@ -82,12 +82,12 @@
        </Disclosure>
        <Disclosure v-slot="{ open }">
          <DisclosureButton
-           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-blue-100 hover:bg-blue-600 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75"
+           class="flex w-full justify-between rounded-lg bg-dev-500 px-4 py-2 text-left text-lg font-medium text-orange-100 hover:bg-orange-600 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/75"
          >
            <span>Как ухаживать за натяжным потолком?</span>
            <ChevronUpIcon
              :class="open ? 'rotate-180 transform' : ''"
-             class="h-5 w-5 text-blue-200"
+             class="h-5 w-5 text-orange-200"
            />
          </DisclosureButton>
          <DisclosurePanel class="px-4 pb-2 pt-4 text-base text-gray-800">

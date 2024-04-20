@@ -9,10 +9,10 @@
    width: 75px;
    height: 75px;
    font-size: 15px;
-   background-color: #2453E0;
+   background-color: orange;
    border-radius: 5em;
    box-shadow:
-     0 0 0 0em rgba(#2453E0, 0),
+     0 0 0 0em rgba(orange, 0),
      0em 0.05em 0.1em rgba(#000000, 0.2);
    transform: translate3d(0, 0, 0) scale(1);
  }

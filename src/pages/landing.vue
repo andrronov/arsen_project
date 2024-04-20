@@ -1,58 +1,57 @@
 <script setup>
 import { ref } from 'vue';
-import headNav from './components/headNav.vue'
-import defaultButton from './components/defaultButton.vue'
-import services from './components/services.vue'
-import aboutCompany from './components/aboutCompany.vue'
-import leasingItems from './components/leasingItems.vue';
-import advantages from './components/advantages.vue';
-import leasingAgent from './components/leasingAgent.vue'
-import popQuestions from './components/popQuestions.vue'
-import rates from './components/rates.vue'
-import mainSlider from './components/mainSlider.vue';
-import parallaxComponent from './components/parallaxComponent.vue'
-import footerComponent from './components/footerComponent.vue'
-import splashScreen from './components/splashScreen.vue'
-import phoneRing from './components/phoneRing.vue'
-import roofTypes from './components/roofTypes.vue';
+import headNav from '../components/headNav.vue'
+import defaultButton from '../components/defaultButton.vue'
+import services from '../components/services.vue'
+import aboutCompany from '../components/aboutCompany.vue'
+import leasingItems from '../components/leasingItems.vue';
+import advantages from '../components/advantages.vue';
+import leasingAgent from '../components/leasingAgent.vue'
+import popQuestions from '../components/popQuestions.vue'
+import rates from '../components/rates.vue'
+import mainSlider from '../components/mainSlider.vue';
+import parallaxComponent from '../components/parallaxComponent.vue'
+import footerComponent from '../components/footerComponent.vue'
+import splashScreen from '../components/splashScreen.vue'
+import phoneRing from '../components/phoneRing.vue'
+import roofTypes from '../components/roofTypes.vue';
 
 const darkMode = ref(false)
 const marginBottom = ref('mb-24')
 
 const navigation = [
-   { name: 'Услуги', href: '#services', current: true },
-   { name: 'О нас', href: '#about', current: false },
-   { name: 'Какие потолки устанавливаем', href: '#items', current: false },
-   { name: 'Преимущества', href: '#advantages', current: false },
-   { name: 'Частые вопросы', href: '#questions', current: false },
-   { name: 'Заявка', href: '#application', current: false },
-   { name: 'Отзыв клиента', href: '#rate', current: false },
-   { name: 'Контакты', href: '#contacts', current: false },
+   { name: 'Услуги', href: 'services', current: true },
+   { name: 'О нас', href: 'about', current: false },
+   { name: 'Какие потолки устанавливаем', href: 'items', current: false },
+   { name: 'Преимущества', href: 'advantages', current: false },
+   { name: 'Частые вопросы', href: 'questions', current: false },
+   { name: 'Заявка', href: 'application', current: false },
+   { name: 'Отзыв клиента', href: 'rate', current: false },
+   { name: 'Контакты', href: 'contacts', current: false },
  ]
 
 </script>
 
 <template>
-  <router-view />
-  <!-- <splashScreen />
+  <splashScreen />
   <div id="top" :class="{'dark': darkMode}" class="flex flex-col relative">
     <div class="w-full">
       <div class="flex flex-row justify-between items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-20">
-        <h1 class="text-lg xs:text-xl" id="font">JBY Group</h1>
+        <!-- <h1 class="text-lg xs:text-xl" id="font">JBY Group</h1> -->
         <img src="/logo.png" alt="">
         <div class="flex flex-row text-nowrap items-center gap-2">
-          <a href="tel:+74993900839" class="text-sm xs:text-lg">+7 (499) 390-08-39</a>
+          <a href="tel:+74993900839" class="text-sm hidden xs:block xs:text-lg">+7 (499) 390-08-39</a>
           <defaultButton class="text-sm">Звонок</defaultButton>
         </div>
       </div>
     </div>
     <headNav :nav="navigation"></headNav>
     <mainSlider />
-    <div class="h-20" id="divider"></div> -->
+    <div class="h-20" id="divider"></div>
     <!-- наши услуги -->
-    <!-- <services id="services" :class="marginBottom" /> -->
+    <services id="services" :class="marginBottom" />
     <!-- синяя полоса с условиями -->
-    <!-- <section class="w-full bg-dev-500">
+    <section class="w-full bg-dev-500">
       <div class="hidden h-44 s:flex max-w-7xl mx-auto flex-row justify-between items-center px-6">
         <div class="flex flex-col justify-evenly w-1/5 text-white h-full">
           <p class="text-3xl font-bold">10 лет</p>
@@ -77,27 +76,27 @@ const navigation = [
       </div>
       <div class="s:hidden min-h-96 max-w-lg mx-auto flex flex-col justify-between p-6 gap-8">
         <div class="flex flex-col w-full justify-between text-white h-1/5 gap-2">
-          <p class="text-3xl font-bold">от 2 часов</p>
+          <p class="text-3xl font-bold">10 лет</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Решение по сделке</p>
+          <p class="text-2xl font-normal">Опыта работы</p>
         </div>
         <div class="flex flex-col w-full justify-evenly text-white h-1/5 gap-2">
-          <p class="text-3xl font-bold">от 0%</p>
+          <p class="text-3xl font-bold">20 лет гарантии</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Аванс</p>
+          <p class="text-2xl font-normal">На натяжной потолок</p>
         </div>
         <div class="flex flex-col w-full justify-evenly text-white h-1/5 gap-2">
-          <p class="text-3xl font-bold">по 2 документам</p>
+          <p class="text-3xl font-bold">10 бригад</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Оформление</p>
+          <p class="text-2xl font-normal">Профессионалов</p>
         </div>
         <div class="flex flex-col w-full justify-evenly text-white h-1/5 gap-2">
-          <p class="text-3xl font-bold">от 6 до 84</p>
+          <p class="text-3xl font-bold">24 часа</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Месяцев лизинга</p>
+          <p class="text-2xl font-normal">От замера до монтажа</p>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- <section class="h-16 text-dev-300 w-full flex items-center">
       <marquee>Наши партнеры : ООО "Газпромбанк Автолизинг", АО "Сбербанк Лизинг", АО "ВТБ Лизинг", ООО "Каркаде", ООО "Интерлизинг", ООО "МК Лизинг", ООО "МСБ-Лизинг", ООО "Совкомбанк Лизинг", ООО "Фера", </marquee>
     </section> -->
@@ -113,21 +112,21 @@ const navigation = [
         </div>
       </div>
     </section> -->
-    <!-- <aboutCompany id="about" :class="marginBottom" />
+    <aboutCompany id="about" :class="marginBottom" />
     <leasingItems id="items" :class="marginBottom" />
     <advantages id="advantages" :class="marginBottom" />
-    <div class="h-20 w-full bg-dev-100" :class="marginBottom"></div> -->
+    <div class="h-20 w-full bg-dev-100" :class="marginBottom"></div>
     
     <!-- <leasingAgent :class="marginBottom" /> -->
 
     <!-- СДЕЛАТЬ КАК НА САЙТЕ ПРО ВИДЫ ПОТОЛКОВ -->
-    <!-- <roofTypes :class="marginBottom" />
+    <roofTypes :class="marginBottom" />
     <popQuestions id="questions" :class="marginBottom" />
     <parallaxComponent id="application" />
     <rates id="rate" />
     <footerComponent id="contacts" :nav="navigation" />
     <phoneRing class="fixed bottom-5 right-6" />
-  </div> -->
+  </div>
 </template>
 
 <style>

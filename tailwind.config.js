@@ -7,9 +7,9 @@ export default {
     extend: {
       colors: {
         dev: {
-          100: "#3366FF",
-          300: "#1F5BFF",
-          500: "#2453E0"
+          '100': '#FFD990',
+          '300': '#FFBF43',
+          '500': '#FFA800',
         }
       }
     },

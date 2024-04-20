@@ -5,9 +5,12 @@
        <p class="font-medium bg-gray-900/20 p-2">{{ slide.text }}</p>
        <div>
          <p class="text-gray-300 text-base mb-4">Оставьте заявку и мы свяжемся с Вами в ближайшее время!</p>
-         <a href="#application" v-smooth-scroll="{ duration: 1000, offset: -50 }" class="bg-dev-100 p-3 rounded-full text-white dark:text-black cursor-pointer hover:bg-dev-500 hover:text-gray-100">
+         <p v-if="index === 3" @click="this.$router.push('/product/pensioneers')" class="bg-dev-300 p-2 rounded-full text-white dark:text-black cursor-pointer hover:bg-dev-500 hover:text-gray-100">
+            Перейти
+         </p>
+         <p v-else @click.prevent="scrollToSection('application')" class="bg-dev-300 p-2 rounded-full text-white dark:text-black cursor-pointer hover:bg-dev-500 hover:text-gray-100">
             Оставить заявку
-         </a>
+         </p>
        </div>
      </slide>
  
@@ -21,6 +24,7 @@
  <script>
  import 'vue3-carousel/dist/carousel.css'
  import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+ import {useRouter} from 'vue-router'
  
  export default {
    name: 'App',
@@ -51,10 +55,21 @@
             {
                img: '/akciya8-2.jpg',
                title: 'Скидки пенсионерам',
+               href: '/pensioneers',
                text: "Мы предоставляем скидки на натяжной потолок пенсионерам в размере 15% до 20%"
             },
          ]
       }
+   },
+   methods: {
+     scrollToSection(el){
+  // mobileMenuOpen.value = false
+    const section = document.getElementById(el)
+    section.scrollIntoView({
+      behavior: 'smooth',
+          block: 'start',
+    })
+}
    }
  }
  </script>

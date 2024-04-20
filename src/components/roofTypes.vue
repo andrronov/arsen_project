@@ -1,7 +1,7 @@
 <template>
    <div class="overflow-hidden bg-white py-24 sm:py-32">
      <div class="mx-auto max-w-7xl px-2 lg:px-4 flex flex-col items-center gap-4">
-       <h2 class="text-3xl sm:text-4xl text-center mb-12">Виды натяжных потолков</h2>
+       <h2 class="text-dev-500 font-semibold text-3xl sm:text-4xl text-center mb-12">Виды натяжных потолков</h2>
        <p class="text-lg mb-6">ПВХ потолки бывают трёх фактур:</p>
        <div class="flex flex-row text-[10px] xs:text-base sm:text-lg text-center items-center w-full justify-between">
          <div class="w-1/3 flex flex-col items-center gap-2">
