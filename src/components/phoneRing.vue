@@ -4,6 +4,7 @@
 
 <style scoped lang="scss">
  .Phone {
+  z-index: 20;
    display: block;
    margin: 0;
    width: 75px;

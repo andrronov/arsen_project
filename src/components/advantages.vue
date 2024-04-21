@@ -11,7 +11,7 @@
         <p v-if="item.adding" class="text-dev-500 font-semibold mt-1 text-lg">{{ item.adding }}</p>
       </div>
     </div>
-    <a href="#application" v-smooth-scroll="{ duration: 1000, offset: -50 }" class="p-3 mt-8 text-center w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</a>
+    <p @click="toSection('application')" class="cursor-pointer p-3 mt-8 text-center w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</p>
   </section>
 </template>
 
@@ -42,6 +42,14 @@ const items = ref([
     text: 'На все наши работы мы предоставляем гарантию. Мы всегда готовы прийти на помощь в случае возникновения вопросов или необходимости в дополнительном обслуживании.'
   },
 ])
+
+function toSection(el){
+  const section = document.getElementById(el)
+  section.scrollIntoView({
+    behavior: 'smooth',
+        block: 'start',
+  })
+ }
 </script>
 
 <style></style>

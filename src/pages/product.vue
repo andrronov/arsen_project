@@ -3,7 +3,9 @@
   <div class="w-full">
     <div class="flex flex-row justify-between items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-20 border-b-8 border-dev-500">
       <!-- <h1 class="text-lg xs:text-xl" id="font">JBY Group</h1> -->
-      <img src="/logo.png" alt="">
+      <router-link to="/">
+        <img src="/logo.png" alt="">
+      </router-link>
       <div class="flex flex-row text-nowrap items-center gap-2">
         <a href="tel:+74993900839" class="text-sm hidden xs:block xs:text-lg">+7 (499) 390-08-39</a>
         <defaultButton class="text-sm">Звонок</defaultButton>

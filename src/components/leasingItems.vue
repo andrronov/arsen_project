@@ -13,7 +13,7 @@
             </router-link>
          </div>
       </div>
-    <a href="#application" v-smooth-scroll="{ duration: 1000, offset: -50 }" class="p-3 mt-2 mb-8 text-center w-44 border-2 text-dev-500 bg-white border-dev-500 rounded-2xl font-bold hover:bg-dev-100 hover:text-white">Оставить заявку</a>
+    <p @click="toSection('application')" class="cursor-pointer p-3 mt-2 mb-8 text-center w-44 border-2 text-dev-500 bg-white border-dev-500 rounded-2xl font-bold hover:bg-dev-100 hover:text-white">Оставить заявку</p>
    </section>
 </template>
 
@@ -62,4 +62,12 @@ const leasItems = ref([
       href: '/glyantsevie'
    },
 ])
+
+function toSection(el){
+  const section = document.getElementById(el)
+  section.scrollIntoView({
+    behavior: 'smooth',
+        block: 'start',
+  })
+ }
 </script>

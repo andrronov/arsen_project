@@ -1,5 +1,5 @@
 <template>
-   <Disclosure as="nav" class="bg-dev-500" v-slot="{ open }">
+   <Disclosure as="nav" class="bg-dev-500 sticky top-0 z-40" v-slot="{ open }">
      <header class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
        <div class="relative flex h-16 items-center justify-between">
          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -14,7 +14,7 @@
          <div class="flex flex-1 items-center justify-center">
            <div class="hidden sm:block w-full">
              <div class="flex justify-between">
-               <p v-for="item in nav" :key="item.name" @click.prevent="scrollToSection(item.href)" :class="[item.current ? 'bg-orange-900 text-white' : 'text-gray-300 hover:bg-orange-800 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</p>
+               <p v-for="item in nav" :key="item.name" @click.prevent="scrollToSection(item.href)" :class="[item.current ? 'bg-orange-900 text-white' : 'text-gray-300 hover:bg-orange-800 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined" class="cursor-pointer">{{ item.name }}</p>
              </div>
            </div>
          </div>

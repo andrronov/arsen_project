@@ -1,6 +1,6 @@
 <template>
    <div id="application" class="w-full mx-auto min-h-[680px] bg-fixed bg-cover bg-center flex items-center justify-center"
-   style="background-image:url('/dsc3554.jpg')">
+   style="background-image:url('/dsc_0956-1300x863-1.jpg')">
          <div class="w-full max-w-sm px-4 text-white">
             <h2 class="font-bold text-xl text-center mb-2">Получите бесплатный
               расчет стоимости своего

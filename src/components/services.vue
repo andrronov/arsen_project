@@ -20,7 +20,8 @@
          </dl>
        </div>
        <div class="mt-24 w-full flex flex-col items-center">
-          <a href="#application" v-smooth-scroll="{ duration: 1000, offset: -50 }" class="p-3 text-center w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</a>
+          <p @click="toSection('application')" class="cursor-pointer p-3 text-center w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</p>
+          <!-- <a href="#application" v-smooth-scroll="{ duration: 1000, offset: -50 }" class="p-3 text-center w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</a> -->
        </div>
       </div>
     </section>
@@ -68,7 +69,11 @@
    },
  ]
 
- function submitApplication(){
-   alert('Заявка успешно оставлена (в разработке)')
+ function toSection(el){
+  const section = document.getElementById(el)
+  section.scrollIntoView({
+    behavior: 'smooth',
+        block: 'start',
+  })
  }
  </script>

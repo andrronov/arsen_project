@@ -15,12 +15,16 @@ import footerComponent from '../components/footerComponent.vue'
 import splashScreen from '../components/splashScreen.vue'
 import phoneRing from '../components/phoneRing.vue'
 import roofTypes from '../components/roofTypes.vue';
+import calculator from '../components/calculator.vue';
 
 const darkMode = ref(false)
 const marginBottom = ref('mb-24')
 
+const isCalculatorModalOpen = ref(false)
+const opened = ref(false)
+
 const navigation = [
-   { name: 'Услуги', href: 'services', current: true },
+   { name: 'Услуги', href: 'services', current: false },
    { name: 'О нас', href: 'about', current: false },
    { name: 'Какие потолки устанавливаем', href: 'items', current: false },
    { name: 'Преимущества', href: 'advantages', current: false },
@@ -38,7 +42,9 @@ const navigation = [
     <div class="w-full">
       <div class="flex flex-row justify-between items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-20">
         <!-- <h1 class="text-lg xs:text-xl" id="font">JBY Group</h1> -->
-        <img src="/logo.png" alt="">
+        <router-link to="/">
+          <img src="/logo.png" alt="">
+        </router-link>
         <div class="flex flex-row text-nowrap items-center gap-2">
           <a href="tel:+74993900839" class="text-sm hidden xs:block xs:text-lg">+7 (499) 390-08-39</a>
           <defaultButton class="text-sm">Звонок</defaultButton>
@@ -47,6 +53,15 @@ const navigation = [
     </div>
     <headNav :nav="navigation"></headNav>
     <mainSlider />
+
+    <div class="w-full my-12 bg-dev-300">
+      <div class="max-w-7xl h-32 mx-auto my-4 flex flex-col items-center justify-between">
+        <h3 class="text-xl sm:text-2xl text-center font-medium text-white">Расчитать стоимость потолка</h3>
+        <p @click="isCalculatorModalOpen = true" class="cursor-pointer p-2 text-center w-44 border-2 text-dev-500 bg-white border-dev-500 rounded-2xl font-bold hover:bg-dev-100 hover:text-white">Открыть калькулятор</p>
+      </div>
+    </div>
+    <calculator :isOpen="isCalculatorModalOpen" @close-modal="isCalculatorModalOpen = false" />
+
     <div class="h-20" id="divider"></div>
     <!-- наши услуги -->
     <services id="services" :class="marginBottom" />
