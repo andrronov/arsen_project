@@ -46,16 +46,14 @@ const axiosInstance = axios.create({baseURL: import.meta.env.VITE_SITE_URL})
 const dataForm = reactive({
   userName: '',
   userPhone: '',
-  userINN: '',
-  userTransport: '',
 })
 const resLog = ref(null)
 const loading = ref(false)
 
 async function sendEmail(){
-  const {userName: name, userPhone: phone, userINN: inn, userTransport: transport} = dataForm
+  const {userName: name, userPhone: phone} = dataForm
   loading.value = true
-  if([name, phone, inn, transport].every(val => val.toString().length > 0)) {
+  if([name, phone].every(val => val.toString().length > 0)) {
     resLog.value = null
     const res = await fetch(import.meta.env.VITE_SITE_URL + 'api/application', {
       method: 'POST',
